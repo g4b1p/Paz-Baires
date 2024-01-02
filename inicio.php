@@ -166,7 +166,7 @@
                     <div class="imagen-container">
                         <img src="phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon" onclick="addToFavorites('phot1.jpg')">&#9825;</span>
+                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
@@ -175,7 +175,7 @@
                     <div class="imagen-container">
                         <img src="phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon" onclick="addToFavorites('phot1.jpg')">&#9825;</span>
+                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
@@ -184,7 +184,7 @@
                     <div class="imagen-container">
                         <img src="phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon" onclick="addToFavorites('phot1.jpg')">&#9825;</span>
+                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
