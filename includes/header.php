@@ -6,7 +6,7 @@
         </div>
 
         <header>
-            <img src="logo.png" style="height: 65px; width: auto;">
+            <img src="images/logo.png" style="height: 65px; width: auto;">
             <nav>
                 <a href="inicio.php">INICIO</a>
                 <a href="quiero-comprar.php">QUIERO COMPRAR</a>

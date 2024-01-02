@@ -3,6 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="ICONA.png">
+    <link rel="icon" href="images/ICONA.png">
     <title>Paz Baires</title>
 </head>

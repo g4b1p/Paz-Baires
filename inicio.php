@@ -128,7 +128,7 @@
     <div class="container-principal">
         <div>
             <center>
-                <img src="verano24.png" style="height: auto; width: 100%;">
+                <img src="images/verano24.png" style="height: auto; width: 100%;">
             </center>
         </div>
 
@@ -152,27 +152,24 @@
             <div class="articulos-container">
                 <div class="articulo">
                     <div class="imagen-container">
-                        <img src="phot1.jpg" style="max-width: 100%; height: auto;">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
                 </div>
                 <div class="articulo">
                     <div class="imagen-container">
-                        <img src="phot1.jpg" style="max-width: 100%; height: auto;">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
                 </div>
                 <div class="articulo">
                     <div class="imagen-container">
-                        <img src="phot1.jpg" style="max-width: 100%; height: auto;">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
                         <a href=""><button>seleccionar opciones</button></a>
-                        <span class="favorite-icon">&#9825;</span>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>

@@ -1,7 +1,7 @@
 <footer>
         <div class="container-footer">
             <div class="div-fot">
-                <img src="ICONA.png" style="height: 70px; width: auto; padding-right: 10px;">
+                <img src="images/ICONA.png" style="height: 70px; width: auto; padding-right: 10px;">
                 <div>
                     <h4>PAZ BAIRES © Copyright 2023</h4>
                     <h4>Todos los derechos reservados.</h4>
