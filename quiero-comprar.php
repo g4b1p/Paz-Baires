@@ -153,13 +153,13 @@
         <header>
             <img src="logo.png" style="height: 65px; width: auto;">
             <nav>
-                <a href="inicio.html">INICIO</a>
-                <a href="info-compra.html" class="active-link">QUIERO COMPRAR</a>
-                <a href="tienda.html">TIENDA</a>
-                <a href="carrito.html">CARRITO</a>
+                <a href="inicio.php">INICIO</a>
+                <a href="quiero-comprar.php" class="active-link">QUIERO COMPRAR</a>
+                <a href="tienda.php">TIENDA</a>
+                <a href="carrito.php">CARRITO</a>
             </nav>
             <nav>
-                <a href="favoritos.html"><img
+                <a href="favoritos.php"><img
                         src="https://static.vecteezy.com/system/resources/previews/001/187/989/original/heart-png.png"
                         style="height: 27x; width: 29px;"></a>
                 <a href="https://www.instagram.com/pb__accesorios/" target="_blank"><img
