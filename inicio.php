@@ -3,21 +3,7 @@
 
 <?php require_once "includes/head.php"; ?>
 
-<?php require_once "includes/styles/header-style.php"; ?>
-
 <style>
-    /*-----container principal-----*/
-    .container-principal {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        max-width: 1200px;
-    }
-
-
-
     /*-----nuevos ingresos-----*/
     .carousel-cont {
         margin-top: 30px;
@@ -148,6 +134,8 @@
 
     <?php require_once "includes/header.php"; ?>
     <?php require_once "includes/styles/header-style.php"; ?>
+
+    <?php require_once "includes/styles/container-principal-style.php"; ?>
 
     <div class="container-principal">
         <div>
