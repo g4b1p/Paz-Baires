@@ -84,18 +84,6 @@
         opacity: 1;
     }
 
-    .favorite-icon {
-        position: absolute;
-        right: 10px;
-        font-size: 35px;
-        cursor: pointer;
-        transition: color 0.3s ease-in-out;
-    }
-
-    .favorite-icon.active {
-        color: #9976e0;
-    }
-
 
 
     /*-----informacion-----*/

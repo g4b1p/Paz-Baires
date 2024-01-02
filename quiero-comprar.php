@@ -20,7 +20,7 @@
         display: block;
         padding: 20px;
         font-size: 20px;
-        background: #9976e0;
+        background: #8ca853;
         color: #fff;
         cursor: pointer;
         margin-bottom: 2px;
@@ -28,7 +28,7 @@
     }
 
     .acordeon label:hover {
-        background: #6847aa;
+        background: #698B24;
     }
 
     .acordeon .contenido-acordeon {
@@ -66,13 +66,13 @@
                 </label>
                 <div class="contenido-acordeon">
                     <p>
-                        1) Debes entrar a la sección <a href=""
-                            style="text-decoration: none; color: #9976e0;">TIENDA</a>.
+                        1) Debes entrar a la sección <a href="tienda.php"
+                            style="text-decoration: none; color: #8ca853;">TIENDA</a>.
                         Aquí podrás llenar el carrito con las prendas que desees comprar, eligiendo la cantidad y color
                         de cada modelo.
                         <br>
-                        2) Para finalizar tu pedido ingresa a tu <a href=""
-                            style="text-decoration: none; color: #9976e0;">CARRITO</a> y haz clic en “FINALIZAR COMPRA”.
+                        2) Para finalizar tu pedido ingresa a tu <a href="carrito.php"
+                            style="text-decoration: none; color: #8ca853;">CARRITO</a> y haz clic en “FINALIZAR COMPRA”.
                         <br>
                         3) Por último necesitamos que llenes el formulario de "FACTURACIÓN Y ENVÍO" para poder
                         contactarnos con vos mediante WhatsApp y corroborar todo el stock de tu pedido.

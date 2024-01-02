@@ -32,11 +32,7 @@
     }
 
     nav a:hover {
-        color: #9976e0;
-    }
-
-    .active-link {
-        color: #9976e0;
+        color: #8ca853;
     }
 
     nav img {
