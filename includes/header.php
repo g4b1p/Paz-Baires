@@ -14,9 +14,6 @@
                 <a href="carrito.php">CARRITO</a>
             </nav>
             <nav>
-                <a href="favoritos.php"><img
-                        src="https://static.vecteezy.com/system/resources/previews/001/187/989/original/heart-png.png"
-                        style="height: 27x; width: 29px;"></a>
                 <a href="https://www.instagram.com/pb__accesorios/" target="_blank"><img
                         src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png"
                         style="height: 27x; width: 29px;"></a>
