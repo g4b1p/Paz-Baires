@@ -153,7 +153,7 @@
                 <div class="articulo">
                     <div class="imagen-container">
                         <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
+                        <a href="publicacion.php"><button>seleccionar opciones</button></a>
                     </div>
                     <h3>razo mediano (morley)</h3>
                     <h4>$4.000</h4>
