@@ -4,20 +4,7 @@
 <?php require_once "includes/head.php"; ?>
 
 <style>
-    /*-----nuevos ingresos-----*/
-    .carousel-cont {
-        width: 100%;
-        overflow: hidden;
-        /*el carrusel se desplace más allá del borde de la ventana del navegador*/
-    }
-
-    .carousel {
-        display: flex;
-        animation: scroll 10s linear infinite;
-        /*La animacion se ejecutara durante 10s con una interpolacion lineal (transición suave en lugar de un movimiento brusco) y se repetira infinitamente*/
-    }
-
-    .carousel-item {
+    .tienda-header {
         padding: 2px;
         flex: 0 0 100%;
         /*para q los elementos no crezcan ni se encoja (flex-grow y flex-shrink son ambos 0), q tengan un ancho del 100%*/
@@ -30,23 +17,7 @@
         align-items: center;
         /*centra verticalmente el conten*/
         color: rgb(255, 255, 255);
-        background-color: #8ca853;
-    }
-
-    @keyframes scroll {
-
-        /*conjunto de reglas de animación (notación --> @keyframes)*/
-        0% {
-            /*estado inicial*/
-            transform: translateX(0);
-            /*el elemento no tiene ningún desplazamiento horizontal*/
-        }
-
-        100% {
-            /*estado final*/
-            transform: translateX(-100%);
-            /*Fuera de la vista hacia la izq*/
-        }
+        background-color: #906ADB;
     }
 
     .articulos-container {
@@ -67,7 +38,7 @@
         padding: 5px;
         width: 200px;
         height: auto;
-        background-color: #8ca853;
+        background-color: #906ADB;
         border: #8ca853;
         color: #ffffff;
         cursor: pointer;
@@ -92,102 +63,88 @@
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
     <div class="container-principal">
-        <div class="nuevos-ingresos">
-            <div class="carousel-cont">
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="articulos-container">
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-            </div>
-            <div class="articulos-container">
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-            </div>
-            <div class="articulos-container">
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
-                    <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
-                    </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-            </div>
+        <div class="tienda-header">
+            <h4>Nuevos ingresos!!!<h4>
         </div>
+
+        <div class="articulos-container">
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+            </div>
+            <div class="articulos-container">
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+            </div>
+            <div class="articulos-container">
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+                <div class="articulo">
+                    <div class="imagen-container">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <a href=""><button>seleccionar opciones</button></a>
+                    </div>
+                    <h3>razo mediano (morley)</h3>
+                    <h4>$4.000</h4>
+                </div>
+            </div>
     </div>
 
     <?php require_once "includes/footer.php"; ?>

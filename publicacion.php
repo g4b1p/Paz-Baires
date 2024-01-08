@@ -165,12 +165,6 @@
                 cantidadInput.value = cantidad - 1;
             }
         }
-
-        function agregarAlCarrito() {
-            var cantidad = parseInt(document.getElementById("cantidad-input").value);
-            // Realizar aquí la lógica para añadir al carrito con la cantidad seleccionada
-            alert("Añadido al carrito: " + cantidad + " unidades");
-        }
     </script>
 
 </body>

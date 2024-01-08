@@ -17,7 +17,7 @@
         align-items: center;
         /*centra verticalmente el conten*/
         color: rgb(255, 255, 255);
-        background-color: #8ca853;
+        background-color: #906ADB;
     }
 </style>
 
@@ -27,14 +27,6 @@
     <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
-
-    <div class="container-principal">
-            <div class="compras">
-                <div class="header-compras">
-                    <h3>Carrito de compras</h3>
-                </div>
-            </div>
-        </div>
 
     <?php require_once "includes/footer.php"; ?>
     <?php require_once "includes/styles/footer-style.php"; ?>

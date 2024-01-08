@@ -31,7 +31,7 @@
         align-items: center;
         /*centra verticalmente el conten*/
         color: rgb(255, 255, 255);
-        background-color: #8ca853;
+        background-color: #906ADB;
     }
 
     @keyframes scroll {
@@ -68,7 +68,7 @@
         padding: 5px;
         width: 200px;
         height: auto;
-        background-color: #8ca853;
+        background-color: #906ADB;
         border: #8ca853;
         color: #ffffff;
         cursor: pointer;
@@ -89,7 +89,7 @@
     /*-----informacion-----*/
     .info-container {
         padding-bottom: 40px;
-        background-color: #8ca853;
+        background-color: #906ADB;
         color: #ffffff;
         overflow: hidden;
         font-size: 15px;

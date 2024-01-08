@@ -7,7 +7,7 @@
     }
 
     .info {
-        background-color: #9965FF;
+        background-color: #906ADB;
         color: rgb(255, 255, 255);
         padding: 2px;
     }
@@ -59,7 +59,7 @@
     }
 
     #menuToggle a:hover {
-        color: #9965FF;
+        color: #906ADB;
     }
 
     #menuToggle input {
@@ -81,7 +81,7 @@
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: #9965FF;
+        background: #906ADB;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -99,7 +99,7 @@
     #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #9965FF;
+        background: #906ADB;
     }
 
     #menuToggle input:checked ~ span:nth-last-child(3) {
