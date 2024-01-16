@@ -50,41 +50,17 @@
         }
     }
 
-    .articulos-container {
+    .articulos {
+        margin: 10px;
+        font-size: 15px;
         display: flex;
     }
 
-    .articulo {
-        margin: 10px;
-        font-size: 15px;
+    .articulos a {
+        text-decoration: none;
     }
 
-    .imagen-container {
-        position: relative;
-    }
-
-    .imagen-container button {
-        font-size: 16px;
-        padding: 5px;
-        width: 200px;
-        height: auto;
-        background-color: #906ADB;
-        border: #8ca853;
-        color: #ffffff;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .imagen-container:hover button {
-        opacity: 1;
-    }
-
-
+    
 
     /*-----informacion-----*/
     .info-container {
@@ -149,32 +125,29 @@
                     </div>
                 </div>
             </div>
-            <div class="articulos-container">
-                <div class="articulo">
+                <div class="articulos">
                     <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href="publicacion.php"><button>seleccionar opciones</button></a>
+                        <a href="publicacion.php">
+                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                            <h3>razo mediano (morley)</h3>
+                            <h4>$4.000</h4>
+                        </a>
                     </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
                     <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
+                        <a href="publicacion.php">
+                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                            <h3>razo mediano (morley)</h3>
+                            <h4>$4.000</h4>
+                        </a>
                     </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
-                </div>
-                <div class="articulo">
                     <div class="imagen-container">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <a href=""><button>seleccionar opciones</button></a>
+                        <a href="publicacion.php">
+                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                            <h3>razo mediano (morley)</h3>
+                            <h4>$4.000</h4>
+                        </a>
                     </div>
-                    <h3>razo mediano (morley)</h3>
-                    <h4>$4.000</h4>
                 </div>
-            </div>
         </div>
 
         <div class="info-container">
