@@ -62,7 +62,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                 <div class="card shadow">
                     <?php
                     $id = $row['ID'];
-                    $imagen = "images/coleccion-pijamas/$id/principal.jpg?timestamp=" . time();
+                    $imagen = "images/coleccion-pijamas/$id/principal.png?timestamp=" . time();
                     ?>
                     <div class="imagen-container">
                         <a href="publicacion.php?id=<?php echo $row['ID']; ?>&token=<?php echo hash_hmac('sha1', $row['ID'], KEY_TOKEN); ?>">
