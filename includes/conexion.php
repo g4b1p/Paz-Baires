@@ -5,7 +5,7 @@ class database {
     private $user = "root";
     private $password = "";
     private $charset = "utf8";
-    private $db = "Carrito";
+    private $db = "carrito";
 
     function conectar() {
         try {

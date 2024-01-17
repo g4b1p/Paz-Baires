@@ -36,26 +36,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
         color: #906ADB;
     }
 
-    .imagen-container button {
-        font-size: 25px;
-        padding: 10px;
-        width: 240px;
-        height: auto;
-        background-color: #906ADB;
-        border: #8ca853;
-        border-radius: 30px;
-        color: #ffffff;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-    }
-
-    .imagen-container:hover button {
-        background-color: #7D4EDB;
-    }
-
     /* Añadido para controlar el tamaño de las tarjetas */
     .col {
         flex-basis: calc(33.33% - 20px); /* Calcula el ancho con margen entre columnas */
