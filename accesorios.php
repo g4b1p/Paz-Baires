@@ -17,34 +17,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 <?php require_once "includes/head.php"; ?>
 
 <style>
-    .articulos-container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente fila */
-    }
 
-    .imagen-container {
-        position: relative;
-        margin: 10px;
-    }
-
-    .imagen-container a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .imagen-container h4{
-        color: #906ADB;
-    }
-
-    /* Añadido para controlar el tamaño de las tarjetas */
-    .col {
-        flex-basis: calc(33.33% - 20px); /* Calcula el ancho con margen entre columnas */
-    }
-
-    /* Añadido para asegurar que las tarjetas tengan el mismo tamaño */
-    .card {
-        flex: 1;
-    }
 </style>
 
 <body>
@@ -73,6 +46,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
             <?php } ?>
+            <center><h2>Proximamente disponible.</h2></center>
         </div>
     </div>
 

@@ -65,7 +65,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                     $imagen = "images/coleccion-pijamas/$id/principal.png?timestamp=" . time();
                     ?>
                     <div class="imagen-container">
-                        <a href="publicacion.php?id=<?php echo $row['ID']; ?>&token=<?php echo hash_hmac('sha1', $row['ID'], KEY_TOKEN); ?>">
+                        <a href="publicacion-pijamas.php?id=<?php echo $row['ID']; ?>&token=<?php echo hash_hmac('sha1', $row['ID'], KEY_TOKEN); ?>">
                             <img src="<?php echo $imagen; ?>" style="max-width: 100%; height: auto;">
                             <h3><?php echo $row['producto']; ?></h3>
                             <h4>$ <?php echo $row['precio']; ?></h4>
