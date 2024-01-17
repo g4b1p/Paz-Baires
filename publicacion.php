@@ -18,7 +18,7 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
     }
 
     // Realiza la consulta para obtener la información del producto específico
-    $sqlProducto = $con->prepare("SELECT ID, producto, precio FROM productos WHERE activo = 1 AND ID = :id");
+    $sqlProducto = $con->prepare("SELECT ID, producto, precio, talle, stock FROM productos WHERE activo = 1 AND ID = :id");
     $sqlProducto->bindParam(':id', $id, PDO::PARAM_INT);
     $sqlProducto->execute();
     $producto = $sqlProducto->fetch(PDO::FETCH_ASSOC);
@@ -62,8 +62,11 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
                 <img src="<?php echo $imagen; ?>" style="max-width: 50%; height: auto;">
                 <div class="articulo-detalle">
                     <h1><?php echo $producto['producto']; ?></h1>
-                    <h2 style = "line-height: 50px;">$ <?php echo $producto['precio']; ?></h2>
+                    <h2>$ <?php echo $producto['precio']; ?></h2>
+                    <h3>Talle: <?php echo $producto['talle']; ?></h3>
+                    <h3>Stock: <?php echo $producto['stock']; ?></h3>
                 </div>
+                
             </div>
         </div>
 
