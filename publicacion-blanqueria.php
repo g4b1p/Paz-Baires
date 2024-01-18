@@ -18,7 +18,7 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
     }
 
     // Realiza la consulta para obtener la información del producto específico
-    $sqlProducto = $con->prepare("SELECT ID, producto, precio, talle, stock FROM productos WHERE activo = 1 AND ID = :id");
+    $sqlProducto = $con->prepare("SELECT ID, producto, precio, tamaño, marca, stock FROM productos WHERE activo = 1 AND ID = :id");
     $sqlProducto->bindParam(':id', $id, PDO::PARAM_INT);
     $sqlProducto->execute();
     $producto = $sqlProducto->fetch(PDO::FETCH_ASSOC);
@@ -48,18 +48,25 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
         align-items: center;
     }
 
+    .add-to-cart label {
+        font-size: 18px;
+        line-height: 60px;
+    }
+
     .add-to-cart button {
         margin-top: 10px;
         padding: 10px;
         background: #906ADB;
         border: 0;
         color: #fff;
-        font-size: 15px;
+        font-size: 18px;
+        cursor: pointer;
     }
 
-    select {
+    .add-to-cart select {
         margin-top: 10px;
         padding: 5px;
+        font-size: 18px;
     }
 </style>
 
@@ -80,7 +87,13 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
             <div class="articulo-detalle">
                 <h1><?php echo $producto['producto']; ?></h1>
                 <br>
-                <h2>$ <?php echo $producto['precio']; ?></h2>
+                <h2 style="color: #906ADB;">$ <?php echo $producto['precio']; ?></h2>
+                <br>
+                <h3><u>Detalles del producto</u></h3>
+                <br>
+                <h3>Tamaño: <?php echo $producto['tamaño']; ?></h3>
+                <br>
+                <h3>Marca: <?php echo $producto['marca']; ?></h3>
                 <div class="add-to-cart">
                     <label for="color-select">Selecciona el color:</label>
                     <select id="color-select">

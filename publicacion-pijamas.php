@@ -48,18 +48,26 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
         align-items: center;
     }
 
+    .add-to-cart label {
+        font-size: 18px;
+        line-height: 60px;
+    }
+
     .add-to-cart button {
         margin-top: 10px;
         padding: 10px;
         background: #906ADB;
         border: 0;
         color: #fff;
-        font-size: 15px;
+        font-size: 18px;
+        cursor: pointer;
     }
 
-    select {
+    .add-to-cart select {
         margin-top: 10px;
         padding: 5px;
+        font-size: 18px;
+
     }
 </style>
 
@@ -80,9 +88,9 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
             <div class="articulo-detalle">
                 <h1><?php echo $producto['producto']; ?></h1>
                 <br>
-                <h2>$ <?php echo $producto['precio']; ?></h2>
+                <h2 style="color: #906ADB;">$ <?php echo $producto['precio']; ?></h2>
                 <div class="add-to-cart">
-                    <label for="color-select">Selecciona el color:</label>
+                    <label for="color-select">Seleccione el color:</label>
                     <select id="color-select">
                         <option value="rojo">Rojo</option>
                         <option value="azul">Azul</option>
@@ -90,7 +98,16 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
                         <!-- Agrega más opciones de color según sea necesario -->
                     </select>
                     <br>
-                    <label for="stock-select">Selecciona el stock:</label>
+                    <label for="talle-select">Seleccione la talle:</label>
+                    <select id="talle-select">
+                        <?php
+                        for ($i = 1; $i <= $producto['talle']; $i++) {
+                            echo "<option value='$i'>$i</option>";
+                        }
+                        ?>
+                    </select>
+                    <br>
+                    <label for="stock-select">Selecciona cantidad:</label>
                     <select id="stock-select">
                         <?php
                         for ($i = 1; $i <= $producto['stock']; $i++) {
