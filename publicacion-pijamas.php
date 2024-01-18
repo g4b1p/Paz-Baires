@@ -18,10 +18,19 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
     }
 
     // Realiza la consulta para obtener la información del producto específico
-    $sqlProducto = $con->prepare("SELECT ID, producto, precio, talle, stock FROM productos WHERE activo = 1 AND ID = :id");
+    $sqlProducto = $con->prepare("SELECT ID, producto, precio, talle, stock, categoria FROM productos WHERE activo = 1 AND ID = :id");
     $sqlProducto->bindParam(':id', $id, PDO::PARAM_INT);
     $sqlProducto->execute();
     $producto = $sqlProducto->fetch(PDO::FETCH_ASSOC);
+
+    // Consulta para obtener los colores según la categoría del producto
+    $sqlColores = $con->prepare("SELECT colores.id, colores.nombre
+                                FROM colores
+                                JOIN productos_colores ON colores.id = productos_colores.id_color
+                                WHERE productos_colores.id_producto = :id");
+    $sqlColores->bindParam(':id', $id, PDO::PARAM_INT);
+    $sqlColores->execute();
+    $colores = $sqlColores->fetchAll(PDO::FETCH_ASSOC);
 } else {
     // Redirecciona a una página de error si no se proporciona un ID o token
     header("Location: error.php");
@@ -67,7 +76,6 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
         margin-top: 10px;
         padding: 5px;
         font-size: 18px;
-
     }
 </style>
 
@@ -92,10 +100,11 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
                 <div class="add-to-cart">
                     <label for="color-select">Seleccione el color:</label>
                     <select id="color-select">
-                        <option value="rojo">Rojo</option>
-                        <option value="azul">Azul</option>
-                        <option value="verde">Verde</option>
-                        <!-- Agrega más opciones de color según sea necesario -->
+                        <?php
+                        foreach ($colores as $color) {
+                            echo "<option value='{$color['nombre']}'>{$color['nombre']}</option>";
+                        }
+                        ?>
                     </select>
                     <br>
                     <label for="talle-select">Seleccione la talle:</label>
@@ -128,8 +137,11 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
 
     <script>
         function addToCart() {
-            // Aquí puedes agregar la lógica para añadir el producto al carrito
-            alert('Producto añadido al carrito');
+            var colorSelect = document.getElementById('color-select');
+            var selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+
+            // Aquí puedes agregar la lógica para añadir el producto al carrito con el color seleccionado
+            alert('Producto añadido al carrito con color: ' + selectedColor);
         }
     </script>
 
