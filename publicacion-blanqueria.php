@@ -39,6 +39,12 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
         display: flex;
     }
 
+    .card img {
+        max-width: 50%;
+        height: auto;
+        margin: 0 25px;
+    }
+
     .articulo-detalle {
         margin-left: 15px;
     }
@@ -68,6 +74,46 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
         padding: 5px;
         font-size: 18px;
     }
+
+    @media (width < 860px) {
+        .card {
+            flex-direction: column;
+        }
+
+        .card img {
+            max-width: 90%;
+            height: auto;
+            margin: 25px;
+        }
+
+        .articulo-detalle {
+            margin: 0 25px;
+        }
+
+        button {
+            margin: 30px 0;
+        }
+    }
+
+    @media (width < 600px) {
+        .card {
+            flex-direction: column;
+        }
+
+        .card img {
+            max-width: 90%;
+            height: auto;
+            margin: 25px;
+        }
+
+        .articulo-detalle {
+            margin: 0 25px;
+        }
+
+        button {
+            margin: 30px 0;
+        }
+    }
 </style>
 
 <body>
@@ -82,7 +128,7 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
             <?php
             $imagen = "images/coleccion-blanqueria/{$producto['ID']}/principal.png?timestamp=" . time();
             ?>
-            <img src="<?php echo $imagen; ?>" style="max-width: 50%; height: auto;">
+            <img src="<?php echo $imagen; ?>">
             <div class="articulo-detalle">
                 <h1><?php echo $producto['producto']; ?></h1>
                 <br>
