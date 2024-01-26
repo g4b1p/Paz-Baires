@@ -1,17 +1,17 @@
 <?php
 require_once "includes/config.php";
-require_once "includes/conexion.php"; 
+require_once "includes/conexion.php";
 $db = new database();
 $con = $db->conectar();
 
 // Verifica si se proporciona un ID en la URL
-if(isset($_GET['id']) && isset($_GET['token'])) {
+if (isset($_GET['id']) && isset($_GET['token'])) {
     $id = $_GET['id'];
     $token = $_GET['token'];
 
     // Verifica la autenticidad del token
     $validToken = hash_hmac('sha1', $id, KEY_TOKEN);
-    if($token !== $validToken) {
+    if ($token !== $validToken) {
         // Redirecciona a una página de error si el token no es válido
         header("Location: error.php");
         exit();
@@ -82,7 +82,6 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
 <body>
 
     <?php require_once "includes/header.php"; ?>
-    <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
@@ -133,7 +132,6 @@ if(isset($_GET['id']) && isset($_GET['token'])) {
     </div>
 
     <?php require_once "includes/footer.php"; ?>
-    <?php require_once "includes/styles/footer-style.php"; ?>
 
     <script>
         function addToCart() {

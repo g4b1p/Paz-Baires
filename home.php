@@ -60,7 +60,7 @@
         text-decoration: none;
     }
 
-    
+
 
     /*-----informacion-----*/
     .info-container {
@@ -97,7 +97,6 @@
 <body>
 
     <?php require_once "includes/header.php"; ?>
-    <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
@@ -125,29 +124,29 @@
                     </div>
                 </div>
             </div>
-                <div class="articulos">
-                    <div class="imagen-container">
-                        <a href="publicacion.php">
-                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                            <h3>razo mediano (morley)</h3>
-                            <h4>$4.000</h4>
-                        </a>
-                    </div>
-                    <div class="imagen-container">
-                        <a href="publicacion.php">
-                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                            <h3>razo mediano (morley)</h3>
-                            <h4>$4.000</h4>
-                        </a>
-                    </div>
-                    <div class="imagen-container">
-                        <a href="publicacion.php">
-                            <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                            <h3>razo mediano (morley)</h3>
-                            <h4>$4.000</h4>
-                        </a>
-                    </div>
+            <div class="articulos">
+                <div class="imagen-container">
+                    <a href="publicacion.php">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <h3>razo mediano (morley)</h3>
+                        <h4>$4.000</h4>
+                    </a>
                 </div>
+                <div class="imagen-container">
+                    <a href="publicacion.php">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <h3>razo mediano (morley)</h3>
+                        <h4>$4.000</h4>
+                    </a>
+                </div>
+                <div class="imagen-container">
+                    <a href="publicacion.php">
+                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
+                        <h3>razo mediano (morley)</h3>
+                        <h4>$4.000</h4>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="info-container">
@@ -170,12 +169,8 @@
                         <div class="mini-info">
                             <h2>SEGUINOS</h2>
                             <div class="redes">
-                                <a href="https://www.instagram.com/pb__accesorios/" target="_blank"><img
-                                        src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png"
-                                        style="height: 27x; width: 29px;"></a>
-                                <a href="https://www.facebook.com/pazbaires?locale=es_LA" target="_blank"><img
-                                        src="https://cdn-icons-png.flaticon.com/256/59/59439.png"
-                                        style="height: 27x; width: 29px;"></a>
+                                <a href="https://www.instagram.com/pb__accesorios/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png" style="height: 27x; width: 29px;"></a>
+                                <a href="https://www.facebook.com/pazbaires?locale=es_LA" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/59/59439.png" style="height: 27x; width: 29px;"></a>
                             </div>
                         </div>
                         <div class="mini-info">
@@ -184,17 +179,13 @@
                         </div>
                     </div>
                 </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.728595110654!2d-58.477778751894064!3d-34.62595821670545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc993267983a1%3A0x953bd5fab119147!2sPASEO%20DE%20COMPRAS%20MUNDO%20TEXTIL!5e0!3m2!1ses!2sar!4v1695609342084!5m2!1ses!2sar"
-                    width="600" height="300" style="border:0; border-radius: 50px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.728595110654!2d-58.477778751894064!3d-34.62595821670545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc993267983a1%3A0x953bd5fab119147!2sPASEO%20DE%20COMPRAS%20MUNDO%20TEXTIL!5e0!3m2!1ses!2sar!4v1695609342084!5m2!1ses!2sar" width="600" height="300" style="border:0; border-radius: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
     </div>
 
     <?php require_once "includes/footer.php"; ?>
-    <?php require_once "includes/styles/footer-style.php"; ?>
 
 </body>
 

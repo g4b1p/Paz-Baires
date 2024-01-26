@@ -50,7 +50,6 @@
 <body>
 
     <?php require_once "includes/header.php"; ?>
-    <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
@@ -63,13 +62,11 @@
                 </label>
                 <div class="contenido-acordeon">
                     <p>
-                        1) Debes entrar a la sección <a href="tienda.php"
-                            style="text-decoration: none; color: #906ADB;">TIENDA</a>.
+                        1) Debes entrar a la sección <a href="tienda.php" style="text-decoration: none; color: #906ADB;">TIENDA</a>.
                         Aquí podrás llenar el carrito con las prendas que desees comprar, eligiendo la cantidad y color
                         de cada modelo.
                         <br>
-                        2) Para finalizar tu pedido ingresa a tu <a href="carrito.php"
-                            style="text-decoration: none; color: #906ADB;">CARRITO</a> y haz clic en “FINALIZAR COMPRA”.
+                        2) Para finalizar tu pedido ingresa a tu <a href="carrito.php" style="text-decoration: none; color: #906ADB;">CARRITO</a> y haz clic en “FINALIZAR COMPRA”.
                         <br>
                         3) Por último necesitamos que llenes el formulario de "FACTURACIÓN Y ENVÍO" para poder
                         contactarnos con vos mediante WhatsApp y corroborar todo el stock de tu pedido.
@@ -136,7 +133,6 @@
     </div>
 
     <?php require_once "includes/footer.php"; ?>
-    <?php require_once "includes/styles/footer-style.php"; ?>
 
 </body>
 

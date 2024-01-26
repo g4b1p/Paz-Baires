@@ -24,12 +24,10 @@
 <body>
 
     <?php require_once "includes/header.php"; ?>
-    <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
     <?php require_once "includes/footer.php"; ?>
-    <?php require_once "includes/styles/footer-style.php"; ?>
 
 </body>
 

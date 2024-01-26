@@ -8,7 +8,7 @@
         display: flex;
     }
 
-    .colecciones > div {
+    .colecciones>div {
         position: relative;
         text-align: center;
     }
@@ -29,13 +29,11 @@
         background-color: #7B5ABB;
         cursor: pointer;
     }
-
 </style>
 
 <body>
 
     <?php require_once "includes/header.php"; ?>
-    <?php require_once "includes/styles/header-style.php"; ?>
 
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
@@ -63,7 +61,6 @@
     </div>
 
     <?php require_once "includes/footer.php"; ?>
-    <?php require_once "includes/styles/footer-style.php"; ?>
 
 </body>
 
