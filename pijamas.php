@@ -18,6 +18,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 <style>
     .articulos-container {
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
         /* Permite que los elementos se envuelvan en la siguiente fila */
@@ -39,13 +40,44 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     /* Añadido para controlar el tamaño de las tarjetas */
     .col {
-        flex-basis: calc(33.33% - 20px);
+        flex-basis: calc(33.33%);
         /* Calcula el ancho con margen entre columnas */
     }
 
     /* Añadido para asegurar que las tarjetas tengan el mismo tamaño */
     .card {
         flex: 1;
+        font-size: 15px;
+    }
+
+    @media (width < 860px) {
+        .col {
+            flex-basis: calc(50%);
+            /* Reduce el ancho con margen entre columnas para dispositivos más pequeños */
+        }
+
+        .card {
+            font-size: 15px;
+        }
+
+        .imagen-container {
+            margin: 0 5px;
+        }
+    }
+
+    @media (width < 600px) {
+        .col {
+            flex-basis: calc(50%);
+            /* Reduce el ancho con margen entre columnas para dispositivos más pequeños */
+        }
+
+        .card {
+            font-size: 13px;
+        }
+
+        .imagen-container {
+            margin: 0 4px;
+        }
     }
 </style>
 

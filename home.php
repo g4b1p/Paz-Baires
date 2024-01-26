@@ -6,10 +6,11 @@
 <style>
     /*-----nuevos ingresos-----*/
     .carousel-cont {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
         overflow: hidden;
-        /*el carrusel se desplace más allá del borde de la ventana del navegador*/
+        z-index: 1;
+        /* Ajusta el z-index del carrusel para que esté por debajo del menú */
     }
 
     .carousel {
@@ -24,7 +25,6 @@
         /*para q los elementos no crezcan ni se encoja (flex-grow y flex-shrink son ambos 0), q tengan un ancho del 100%*/
         width: 100%;
         height: 50px;
-        font-size: 20px;
         display: flex;
         justify-content: center;
         /*centra horizontalmente el conten*/
@@ -60,37 +60,107 @@
         text-decoration: none;
     }
 
-
-
     /*-----informacion-----*/
-    .info-container {
-        padding-bottom: 40px;
+    .information {
         background-color: #906ADB;
-        color: #ffffff;
-        overflow: hidden;
-        font-size: 15px;
+        color: #fff;
+        padding: 30px;
+        margin: 0 auto;
     }
 
-    .mini-info {
-        padding: 15px;
-    }
-
-    .mini-info h3 {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .fila-info {
-        display: inline-block;
-    }
-
-    .colum-info {
+    .content {
         display: flex;
+        align-items: center;
         justify-content: center;
     }
 
-    .redes {
-        padding-top: 15px;
+    .columna {
+        margin: 30px;
+    }
+
+    @media (width < 860px) {
+        #menu_toggle {
+            display: block;
+        }
+
+        .nav {
+            padding: 0 20px;
+            display: flex;
+            background-color: #fff;
+        }
+
+        .menu_items {
+            position: fixed;
+            top: 0;
+            width: 260px;
+            background-color: #fff;
+            justify-content: flex-start;
+            height: 100%;
+            left: -100%;
+            padding: 50px 30px 30px;
+            flex-direction: column;
+            transition: all 0.5s ease;
+        }
+
+        .showMenu .menu_items {
+            left: 0;
+        }
+
+        a {
+            color: #333;
+        }
+
+        #menu_toggle {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .menu_items #menu_toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .information {
+            width: 90%;
+            padding: 30px;
+            margin: 0 auto;
+        }
+
+        .information iframe {
+            width: 90%;
+            padding: 30px;
+        }
+
+        .content {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .columna {
+            margin: 0 40px;
+            display: flex;
+        }
+    }
+
+    @media (width < 600px) {
+        .information {
+            width: 87%;
+            padding: 30px;
+            margin: 0 auto;
+        }
+
+        .information iframe {
+            width: 95%;
+            padding: 30px;
+        }
+
+        .columna {
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 </style>
 
@@ -101,26 +171,17 @@
     <?php require_once "includes/styles/container-principal-style.php"; ?>
 
     <div class="container-principal">
-        <div>
-            <center>
-                <img src="images/verano24.png" style="height: auto; width: 100%;">
-            </center>
-        </div>
+
+        <img src="images/verano24.png" style="height: auto; width: 100%; margin: 10px 0;">
 
         <div class="nuevos-ingresos">
             <div class="carousel-cont">
                 <div class="carousel">
                     <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
+                        <h2>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h2>
                     </div>
                     <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
-                    </div>
-                    <div class="carousel-item">
-                        <h4>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h4>
+                        <h2>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h2>
                     </div>
                 </div>
             </div>
@@ -149,38 +210,30 @@
             </div>
         </div>
 
-        <div class="info-container">
+        <div class="information">
             <center>
-                <h1 style="padding: 25px;">INFORMACIÓN</h1>
+                <h2>INFORMACIÓN</h2>
+                <br />
             </center>
-            <div class="colum-info">
-                <div style="display: block;">
-                    <div class="fila-info">
-                        <div class="mini-info">
-                            <h2>UBICACIÓN</h2>
-                            <h3>Campana 560 local 23 y 25. <br> Flores, Argentina.</h3>
-                        </div>
-                        <div class="mini-info">
-                            <h2>HORARIOS</h2>
-                            <h3>Lunes a Viernes de 8 a 15hs. <br> Sabados de 9 a 13hs.</h3>
-                        </div>
+            <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.728595110654!2d-58.477778751894064!3d-34.62595821670545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc993267983a1%3A0x953bd5fab119147!2sPASEO%20DE%20COMPRAS%20MUNDO%20TEXTIL!5e0!3m2!1ses!2sar" width="700" height="400" style="border:0; border-radius: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="columna">
+                    <div>
+                        <h3>UBICACIÓN</h3>
+                        <p>Campana 560 local 23 y 25. <br> Flores, Argentina.</p>
                     </div>
-                    <div class="fila-info">
-                        <div class="mini-info">
-                            <h2>SEGUINOS</h2>
-                            <div class="redes">
-                                <a href="https://www.instagram.com/pb__accesorios/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png" style="height: 27x; width: 29px;"></a>
-                                <a href="https://www.facebook.com/pazbaires?locale=es_LA" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/59/59439.png" style="height: 27x; width: 29px;"></a>
-                            </div>
-                        </div>
-                        <div class="mini-info">
-                            <h2>CONTACTO</h2>
-                            <h3>Email: pazbaires.adm@gmail.com <br> Celular: +54 11 3156-2087 </h3>
-                        </div>
+                    <br />
+                    <div>
+                        <h3>HORARIOS DE ATENCIÓN</h3>
+                        <p>Lunes a Viernes de 8 a 15hs. <br> Sábados de 9 a 13hs.</p>
+                    </div>
+                    <br />
+                    <div>
+                        <h3>CONTACTO</h3>
+                        <p>Email: pazbaires.adm@gmail.com <br> Celular: +54 11 3156-2087 </p>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.728595110654!2d-58.477778751894064!3d-34.62595821670545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc993267983a1%3A0x953bd5fab119147!2sPASEO%20DE%20COMPRAS%20MUNDO%20TEXTIL!5e0!3m2!1ses!2sar!4v1695609342084!5m2!1ses!2sar" width="600" height="300" style="border:0; border-radius: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
         </div>
     </div>

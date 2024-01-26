@@ -52,6 +52,8 @@
         padding: 50px 30px 30px;
         flex-direction: column;
         transition: all 0.5s ease;
+        z-index: 2;
+        /* Ajusta el z-index del menú para que esté por encima del carrusel */
     }
 
     .showMenu .menu_items {
@@ -75,44 +77,41 @@
     }
 </style>
 
-<div class="every-header">
-    <div class="info">
-        <center>
-            <h4>COMPRA MÍNIMA PARA ENVIOS A PARTIR DE $20.000</h4>
-        </center>
-    </div>
+<div class="info">
+    <center>
+        <h4>COMPRA MÍNIMA PARA ENVIOS A PARTIR DE $20.000</h4>
+    </center>
+</div>
 
-    <header>
-        <nav class="nav container">
-            <div></div>
-            <a href="home.php"><img src="images/logo.png" height="80" margin="10"></a>
-            <ul class="menu_items">
-                <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
-                <li><a href="home.php" class="nav_link">Inicio</a></li>
-                <li><a href="quiero-comprar.php" class="nav_link">quiero comprar</a></li>
-                <li><a href="tienda.php" class="nav_link">tienda</a></li>
-                <li><a href="carrito.php" class="nav_link">carrito</a></li>
-                <li>
-                    <a href="" class="nav_link" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png" style="height: 27x; width: 29px; margin-right: 10px;"></a>
-                    <a href="" class="nav_link" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/59/59439.png" style="height: 27x; width: 29px;"></a>
-                </li>
-            </ul>
-            <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
-        </nav>
+<header>
+    <nav class="nav container">
+        <div></div>
+        <a href="home.php"><img src="images/logo.png" height="80" margin="10"></a>
+        <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="home.php" class="nav_link">Inicio</a></li>
+            <li><a href="quiero-comprar.php" class="nav_link">Quiero comprar</a></li>
+            <li><a href="tienda.php" class="nav_link">Tienda</a></li>
+            <li><a href="carrito.php" class="nav_link">Carrito</a></li>
+            <li>
+                <a href="" class="nav_link" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png" style="height: 27x; width: 29px; margin-right: 10px;"></a>
+                <a href="" class="nav_link" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/59/59439.png" style="height: 27x; width: 29px;"></a>
+            </li>
+        </ul>
+        <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+    </nav>
 
-        <center>
-            <hr style="width: 90%">
-            <br />
-        </center>
-    </header>
+    <center>
+        <hr style="width: 90%">
+        <br />
+    </center>
+</header>
 
-    <script>
-        const header = document.querySelector("header");
-        const menuToggler = document.querySelectorAll("#menu_toggle");
+<script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
 
-        menuToggler.forEach(toggler => {
-            toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
-        });
-    </script>
-
-    <div>
+    menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    });
+</script>

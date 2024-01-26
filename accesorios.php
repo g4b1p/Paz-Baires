@@ -17,7 +17,68 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 <?php require_once "includes/head.php"; ?>
 
 <style>
+    .articulos-container {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en la siguiente fila */
+    }
 
+    .imagen-container {
+        position: relative;
+        margin: 10px;
+    }
+
+    .imagen-container a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .imagen-container h4 {
+        color: #906ADB;
+    }
+
+    /* Añadido para controlar el tamaño de las tarjetas */
+    .col {
+        flex-basis: calc(33.33%);
+        /* Calcula el ancho con margen entre columnas */
+    }
+
+    /* Añadido para asegurar que las tarjetas tengan el mismo tamaño */
+    .card {
+        flex: 1;
+        font-size: 15px;
+    }
+
+    @media (width < 860px) {
+        .col {
+            flex-basis: calc(50%);
+            /* Reduce el ancho con margen entre columnas para dispositivos más pequeños */
+        }
+
+        .card {
+            font-size: 15px;
+        }
+
+        .imagen-container {
+            margin: 0 5px;
+        }
+    }
+
+    @media (width < 600px) {
+        .col {
+            flex-basis: calc(50%);
+            /* Reduce el ancho con margen entre columnas para dispositivos más pequeños */
+        }
+
+        .card {
+            font-size: 13px;
+        }
+
+        .imagen-container {
+            margin: 0 4px;
+        }
+    }
 </style>
 
 <body>
