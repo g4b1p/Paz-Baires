@@ -40,6 +40,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     /* Añadido para controlar el tamaño de las tarjetas */
     .col {
+        margin-bottom: 20px;
         flex-basis: calc(33.33%);
         /* Calcula el ancho con margen entre columnas */
     }
