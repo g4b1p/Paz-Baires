@@ -4,9 +4,8 @@
 <?php require_once "includes/head.php"; ?>
 
 <style>
-    /*-----nuevos ingresos-----*/
     .carousel-cont {
-        margin-top: 20px;
+        margin-top: 10px;
         width: 100%;
         overflow: hidden;
         z-index: 1;
@@ -15,7 +14,7 @@
 
     .carousel {
         display: flex;
-        animation: scroll 10s linear infinite;
+        animation: scroll 5s linear infinite;
         /*La animacion se ejecutara durante 10s con una interpolacion lineal (transición suave en lugar de un movimiento brusco) y se repetira infinitamente*/
     }
 
@@ -32,6 +31,7 @@
         /*centra verticalmente el conten*/
         color: rgb(255, 255, 255);
         background-color: #906ADB;
+        font-size: 25px;
     }
 
     @keyframes scroll {
@@ -142,6 +142,55 @@
             margin: 0 40px;
             display: flex;
         }
+
+        .colecciones {
+            flex-direction: column;
+        }
+
+        .colecciones img {
+            height: auto;
+            width: 85%;
+        }
+
+        .coleccion {
+            margin-bottom: 50px;
+        }
+
+        .coleccion-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 35px;
+            font-size: 40px;
+            background-color: #906ADB;
+            border: 1px solid #906ADB;
+            color: #fff;
+        }
+
+        .carousel-cont {
+            margin-top: 10px;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+            /* Ajusta el z-index del carrusel para que esté por debajo del menú */
+        }
+
+        .carousel-item {
+            padding: 2px;
+            flex: 0 0 100%;
+            /*para q los elementos no crezcan ni se encoja (flex-grow y flex-shrink son ambos 0), q tengan un ancho del 100%*/
+            width: 90%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            /*centra horizontalmente el conten*/
+            align-items: center;
+            /*centra verticalmente el conten*/
+            color: rgb(255, 255, 255);
+            background-color: #906ADB;
+            font-size: 20px;
+        }
     }
 
     @media (width < 600px) {
@@ -161,6 +210,66 @@
             flex-direction: column;
             justify-content: center;
         }
+
+        .carousel-cont {
+            margin-top: 10px;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+            /* Ajusta el z-index del carrusel para que esté por debajo del menú */
+        }
+
+        .carousel-item {
+            padding: 2px;
+            flex: 0 0 100%;
+            /*para q los elementos no crezcan ni se encoja (flex-grow y flex-shrink son ambos 0), q tengan un ancho del 100%*/
+            width: 90%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            /*centra horizontalmente el conten*/
+            align-items: center;
+            /*centra verticalmente el conten*/
+            color: rgb(255, 255, 255);
+            background-color: #906ADB;
+            font-size: 17px;
+        }
+    }
+
+    .colecciones {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .colecciones img {
+        height: auto;
+        width: 90%;
+    }
+
+    .colecciones>div {
+        position: relative;
+        text-align: center;
+    }
+
+    .coleccion-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 35px;
+        font-size: 20px;
+        background-color: #906ADB;
+        border: 1px solid #906ADB;
+        color: #fff;
+    }
+
+    .coleccion-button:hover {
+        background-color: #7B5ABB;
+        cursor: pointer;
+    }
+
+    .coleccion img:hover {
+        opacity: 0.9;
     }
 </style>
 
@@ -178,33 +287,30 @@
             <div class="carousel-cont">
                 <div class="carousel">
                     <div class="carousel-item">
-                        <h2>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h2>
+                        <p>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2024!!!</p>
                     </div>
                     <div class="carousel-item">
-                        <h2>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2023!!!</h2>
+                        <p>NUEVOS INGRESOS!!! NUEVA TEMPORADA VERANO 2024!!!</p>
                     </div>
                 </div>
             </div>
-            <div class="articulos">
-                <div class="imagen-container">
-                    <a href="publicacion.php">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <h3>razo mediano (morley)</h3>
-                        <h4>$4.000</h4>
+            <div class="colecciones">
+                <div class="coleccion">
+                    <a href="blanqueria.php">
+                        <img src="images/blanqueria.png">
+                        <button class="coleccion-button">Blanqueria</button>
                     </a>
                 </div>
-                <div class="imagen-container">
-                    <a href="publicacion.php">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <h3>razo mediano (morley)</h3>
-                        <h4>$4.000</h4>
+                <div class="coleccion">
+                    <a href="pijamas.php">
+                        <img src="images/pijamas.png">
+                        <button class="coleccion-button">Pijamas</button>
                     </a>
                 </div>
-                <div class="imagen-container">
-                    <a href="publicacion.php">
-                        <img src="images/phot1.jpg" style="max-width: 100%; height: auto;">
-                        <h3>razo mediano (morley)</h3>
-                        <h4>$4.000</h4>
+                <div class="coleccion">
+                    <a href="accesorios.php">
+                        <img src="images/accesorios.png">
+                        <button class="coleccion-button">Accesorios</button>
                     </a>
                 </div>
             </div>
