@@ -49,19 +49,19 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
         margin-left: 15px;
     }
 
-    .add-to-cart {
-        flex-direction: column;
-        align-items: center;
+    .articulo-detalle p{
+        font-size: 17px;
+        line-height: 40px;
     }
 
     .add-to-cart label {
-        font-size: 18px;
-        line-height: 60px;
+        font-size: 17px;
+        line-height: 40px;
     }
 
     .add-to-cart button {
         margin-top: 10px;
-        padding: 10px;
+        padding: 8px;
         background: #906ADB;
         border: 0;
         color: #fff;
@@ -70,9 +70,8 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
     }
 
     .add-to-cart select {
-        margin-top: 10px;
-        padding: 5px;
-        font-size: 18px;
+        padding: 1px;
+        font-size: 17px;
     }
 
     @media (width < 860px) {
@@ -131,14 +130,12 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
             <img src="<?php echo $imagen; ?>">
             <div class="articulo-detalle">
                 <h1><?php echo $producto['producto']; ?></h1>
-                <br>
                 <h2 style="color: #906ADB;">$ <?php echo $producto['precio']; ?></h2>
+
                 <br>
-                <h3><u>Detalles del producto</u></h3>
-                <br>
-                <h3>Tamaño: <?php echo $producto['tamaño']; ?></h3>
-                <br>
-                <h3>Marca: <?php echo $producto['marca']; ?></h3>
+                <p><u>Detalles del producto</u></p>
+                <p>Tamaño: <?php echo $producto['tamaño']; ?></p>
+                <p>Marca: <?php echo $producto['marca']; ?></p>
                 <div class="add-to-cart">
                     <label for="color-select">Selecciona el color:</label>
                     <select id="color-select">
@@ -156,6 +153,7 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
                         }
                         ?>
                     </select>
+                    
                     <br>
                     <button onclick="addToCart()">Añadir al carrito</button>
                 </div>

@@ -58,14 +58,9 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
         margin-left: 15px;
     }
 
-    .add-to-cart {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .add-to-cart label {
-        font-size: 18px;
-        line-height: 60px;
+        font-size: 17px;
+        line-height: 40px;
     }
 
     .add-to-cart button {
@@ -74,14 +69,13 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
         background: #906ADB;
         border: 0;
         color: #fff;
-        font-size: 18px;
+        font-size: 17px;
         cursor: pointer;
     }
 
     .add-to-cart select {
-        margin-top: 10px;
-        padding: 5px;
-        font-size: 18px;
+        padding: 1px;
+        font-size: 17px;
     }
 
     @media (width < 860px) {
@@ -140,7 +134,6 @@ if (isset($_GET['id']) && isset($_GET['token'])) {
             <img src="<?php echo $imagen; ?>">
             <div class="articulo-detalle">
                 <h1><?php echo $producto['producto']; ?></h1>
-                <br>
                 <h2 style="color: #906ADB;">$ <?php echo $producto['precio']; ?></h2>
                 <div class="add-to-cart">
                     <label for="color-select">Seleccione el color:</label>
